@@ -34,5 +34,9 @@ public function careers()
     return view('careers', compact('jobs'));
 }
 
+public function contact()
+{
+    return view('contact-us');
+}
 
 }
