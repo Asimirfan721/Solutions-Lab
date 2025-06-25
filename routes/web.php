@@ -12,6 +12,7 @@ Route::get('/', function () {
 Route::get('/', [HomeController::class, 'index']);
  Route::get('/about-us', [PageController::class, 'about']);
  Route::get('/services', [PageController::class, 'index']);
+ Route::get('/careers', [PageController::class, 'careers']);
 // Route::get('/case-studies', [PageController::class, 'caseStudies']);
 // Route::get('/careers', [PageController::class, 'careers']);
 // Route::get('/contact-us', [ContactController::class, 'index']);
