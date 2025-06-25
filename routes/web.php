@@ -10,7 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', [HomeController::class, 'index']);
-// Route::get('/about-us', [PageController::class, 'about']);
+ Route::get('/about-us', [PageController::class, 'about']);
 // Route::get('/services', [ServiceController::class, 'index']);
 // Route::get('/case-studies', [PageController::class, 'caseStudies']);
 // Route::get('/careers', [PageController::class, 'careers']);
