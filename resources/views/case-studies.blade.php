@@ -3,65 +3,52 @@
 @section('title', 'Case Studies')
 
 @section('content')
-<div class="case-studies-header text-center py-5 bg-primary text-white">
-    <h1 class="display-4 font-weight-bold">CASE STUDIES</h1>
-</div>
-
-<div class="bg-light py-5">
-    <div class="container d-flex flex-column align-items-center">
-        <h2 class="mb-2 text-primary font-weight-bold text-center">Case Study</h2>
-        <hr class="mb-4 mx-auto" style="width: 60px; border-top: 3px solid #0d6efd; border-radius: 2px;">
-        <p class="text-muted mb-5 text-center" style="max-width: 700px;">
-            Explore exceptional portfolio to witness their transformative work in action, encompassing groundbreaking web and mobile applications, bespoke software development, and captivating digital experiences that push the boundaries of technology and drive business success.
+<!-- Hero Section -->
+<section class="bg-black text-white py-16 text-center">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-red-600">Case Studies</h1>
+        <p class="text-lg max-w-3xl mx-auto text-gray-300">
+            Explore our transformative work in web & mobile development, custom software, and immersive digital experiences.
         </p>
+    </div>
+</section>
 
-        <div class="d-flex flex-column align-items-center w-100" style="max-width: 600px; margin: 0 auto;">
+<!-- Case Studies Section -->
+<section class="bg-white py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-center text-3xl font-bold mb-10 text-red-600">Featured Projects</h2>
+
+        <div class="grid gap-10 md:grid-cols-2 max-w-6xl mx-auto">
             <!-- CraveShare -->
-            <div class="card shadow rounded-lg border-0 mb-5 w-100 transition-card">
-                <img src="{{ asset('images/craveshare.png') }}" class="card-img-top rounded-top" alt="CraveShare">
-                <div class="card-body text-center">
-                    <span class="badge bg-primary mb-2">Web Application</span>
-                    <h5 class="card-title text-primary">CraveShare</h5>
-                    <p class="card-text">
-                        The EMR system (Electronic Medical Record) was designed for a change in the management of mental health care.
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                <img src="{{ asset('images/craveshare.png') }}" alt="CraveShare" class="w-full h-56 object-cover">
+                <div class="p-6 text-center">
+                    <span class="text-sm font-medium text-white bg-red-600 px-3 py-1 rounded-full">Web Application</span>
+                    <h3 class="text-2xl font-bold mt-4 text-gray-800">CraveShare</h3>
+                    <p class="text-gray-600 mt-2">
+                        An EMR system crafted to revolutionize mental health care with intuitive patient and doctor workflows.
                     </p>
-                    <a href="#" class="btn btn-warning btn-lg font-weight-bold shadow-sm px-4">View Case Study</a>
+                    <a href="#" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">
+                        View Case Study
+                    </a>
                 </div>
             </div>
 
             <!-- HRP -->
-            <div class="card shadow rounded-lg border-0 w-100 transition-card">
-                <img src="{{ asset('images/hrp.png') }}" class="card-img-top rounded-top" alt="Headache Relief Program">
-                <div class="card-body text-center">
-                    <span class="badge bg-primary mb-2">Mobile Application</span>
-                    <h5 class="card-title text-primary">Headache Relief Program (HRP)</h5>
-                    <p class="card-text">
-                        Headaches and migraines are very common, affecting millions of sufferers across the world. It often results in missed workdays and affects daily life and productivity.
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                <img src="{{ asset('images/hrp.png') }}" alt="HRP" class="w-full h-56 object-cover">
+                <div class="p-6 text-center">
+                    <span class="text-sm font-medium text-white bg-red-600 px-3 py-1 rounded-full">Mobile Application</span>
+                    <h3 class="text-2xl font-bold mt-4 text-gray-800">Headache Relief Program (HRP)</h3>
+                    <p class="text-gray-600 mt-2">
+                        Designed to support millions with migraine relief via digital therapy, tracking, and analytics tools.
                     </p>
-                    <a href="#" class="btn btn-warning btn-lg font-weight-bold shadow-sm px-4">View Case Study</a>
+                    <a href="#" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">
+                        View Case Study
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<style>
-.transition-card {
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.transition-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 8px 32px rgba(13,110,253,0.15);
-}
-.btn-warning {
-    background: #ffc107;
-    color: #212529;
-    border: none;
-}
-.btn-warning:hover, .btn-warning:focus {
-    background: #ffb300;
-    color: #212529;
-    box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
-}
-</style>
+</section>
 @endsection

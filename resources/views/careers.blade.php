@@ -1,34 +1,38 @@
-@extends('layouts.app') <!-- Update to match your layout -->
+@extends('layouts.app')
 
 @section('title', 'Careers')
 
 @section('content')
-<div class="text-center py-5 bg-light">
-    <h1 class="display-4">CAREERS</h1>
-</div>
+<!-- Hero Section -->
+<section class="bg-black text-white py-16 text-center">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-red-600">Careers</h1>
+        <p class="text-lg max-w-3xl mx-auto text-gray-300">
+            Join the team that’s building the future. Explore current openings and become part of something meaningful.
+        </p>
+    </div>
+</section>
 
-<div class="container py-5">
-    <h2 class="text-center mb-5">Open Positions</h2>
-    
-    <div class="row">
-        @foreach($jobs as $job)
-        <div class="col-md-6 mb-4 d-flex align-items-stretch">
-            <div class="w-100 d-flex border-end pe-4">
-                <div class="w-50 pe-3 text-end">
-                    <h5><strong>{{ $job['title'] }}</strong></h5>
-                    <small class="text-danger">{{ $job['level'] }}</small>
+<!-- Open Positions -->
+<section class="bg-white py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-center text-3xl font-bold mb-10 text-red-600">Open Positions</h2>
+
+        <div class="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+            @foreach($jobs as $job)
+            <div class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">{{ $job['title'] }}</h3>
+                    <span class="text-sm font-medium text-red-500 uppercase tracking-wide">{{ $job['level'] }}</span>
+                    <p class="text-gray-600 mt-3">{{ $job['description'] }}</p>
                 </div>
-                <div class="w-50 ps-3 border-start">
-                    <h5><strong>{{ $job['title'] }}</strong></h5>
-                    <p>{{ $job['description'] }}</p>
-                    <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-danger btn-sm">SEE DETAILS</a>
-                        <a href="#" class="btn btn-danger btn-sm">APPLY NOW</a>
-                    </div>
+                <div class="mt-6 flex space-x-4">
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full text-sm">See Details</a>
+                    <a href="#" class="bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-full text-sm">Apply Now</a>
                 </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
     </div>
-</div>
+</section>
 @endsection
