@@ -10,4 +10,9 @@ class PageController extends Controller
     {
         return view('about-us'); // This should match the filename in /resources/views/
     } 
+    public function index()
+{
+    return view('case-studies');
+}
+
 }
