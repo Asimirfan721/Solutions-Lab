@@ -18,4 +18,9 @@ public function animation()
 {
     return view('service.animation');
 }
+public function graphicDesign()
+{
+    return view('service.graphic-design');
+}
+
 }

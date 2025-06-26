@@ -22,3 +22,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/services/web-development', [ServiceController::class, 'webDevelopment'])->name('services.web');
 Route::get('/services/mobile-app-development', [ServiceController::class, 'mobileAppDevelopment'])->name('services.mobile');
  Route::get('/services/animation', [ServiceController::class, 'animation'])->name('services.animation');
+Route::get('/services/graphic-design', [ServiceController::class, 'graphicDesign'])->name('services.graphic');
