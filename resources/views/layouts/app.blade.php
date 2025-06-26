@@ -24,7 +24,7 @@
     <!-- Dropdown -->
    <div class="absolute hidden group-hover:block bg-white shadow-lg text-black mt-2 rounded w-56 z-50 transition-all duration-300 ease-in-out">
 
-        <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Web App Development</a>
+        <a href="/services/web-development" class="block px-4 py-2 hover:bg-gray-100 border-b">Web App Development</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Mobile App Development</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Animations</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Graphic Designer</a>
