@@ -31,5 +31,9 @@ public function blockchain()
     return view('service.blockchain');
 }
 
+public function cloudComputing()
+{
+    return view('service.cloud-computing');
+}
 
 }

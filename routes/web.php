@@ -25,3 +25,4 @@ Route::get('/services/mobile-app-development', [ServiceController::class, 'mobil
 Route::get('/services/graphic-design', [ServiceController::class, 'graphicDesign'])->name('services.graphic');
 Route::get('/services/product-prototyping', [ServiceController::class, 'productPrototyping'])->name('services.prototyping');
 Route::get('/services/blockchain', [ServiceController::class, 'blockchain'])->name('services.blockchain');
+Route::get('/services/cloud-computing', [ServiceController::class, 'cloudComputing'])->name('services.cloud');
