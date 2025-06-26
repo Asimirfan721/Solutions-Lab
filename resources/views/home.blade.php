@@ -51,7 +51,8 @@
                 </div>
                 <h4 class="font-bold text-lg mb-2">{{ $service->title }}</h4>
                 <p class="text-gray-600 text-sm">{{ $service->description }}</p>
-                <a href="#" class="text-red-600 mt-3 inline-block font-semibold">Learn More</a>
+               <a href="{{ $service->link }}" class="text-red-600 mt-3 inline-block font-semibold">Learn More</a>
+
             </div>
             @endforeach
         </div>
