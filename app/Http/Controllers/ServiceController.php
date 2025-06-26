@@ -10,4 +10,8 @@ class ServiceController extends Controller
     {
         return view('service.web-development');
     }
+    public function mobileAppDevelopment()
+{
+    return view('service.mobile-app-development');
+}
 }

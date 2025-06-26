@@ -20,3 +20,5 @@ Route::get('/', [HomeController::class, 'index']);
 
 //Service Routes
 Route::get('/services/web-development', [ServiceController::class, 'webDevelopment'])->name('services.web');
+Route::get('/services/mobile-app-development', [ServiceController::class, 'mobileAppDevelopment'])->name('services.mobile');
+ 
