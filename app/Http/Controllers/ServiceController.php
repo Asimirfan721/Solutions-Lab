@@ -22,5 +22,9 @@ public function graphicDesign()
 {
     return view('service.graphic-design');
 }
+public function productPrototyping()
+{
+    return view('service.product-prototyping');
+}
 
 }

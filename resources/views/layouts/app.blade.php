@@ -28,7 +28,7 @@
         <a href="/services/mobile-app-development" class="block px-4 py-2 hover:bg-gray-100 border-b">Mobile App Development</a>
         <a href="/services/animation" class="block px-4 py-2 hover:bg-gray-100 border-b">Animations</a>
         <a href="/services/graphic-design" class="block px-4 py-2 hover:bg-gray-100 border-b">Graphic Designer</a>
-        <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Product Prototyping</a>
+        <a href="/services/product-prototyping" class="block px-4 py-2 hover:bg-gray-100 border-b">Product Prototyping</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Blockchain</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Cloud Development</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100">Digital Marketing</a>
