@@ -14,4 +14,8 @@ class ServiceController extends Controller
 {
     return view('service.mobile-app-development');
 }
+public function animation()
+{
+    return view('service.animation');
+}
 }
