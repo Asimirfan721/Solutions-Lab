@@ -26,3 +26,4 @@ Route::get('/services/graphic-design', [ServiceController::class, 'graphicDesign
 Route::get('/services/product-prototyping', [ServiceController::class, 'productPrototyping'])->name('services.prototyping');
 Route::get('/services/blockchain', [ServiceController::class, 'blockchain'])->name('services.blockchain');
 Route::get('/services/cloud-computing', [ServiceController::class, 'cloudComputing'])->name('services.cloud');
+Route::get('/services/digital-marketing', [ServiceController::class, 'digitalMarketing'])->name('services.digital');

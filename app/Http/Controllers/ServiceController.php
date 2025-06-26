@@ -35,5 +35,10 @@ public function cloudComputing()
 {
     return view('service.cloud-computing');
 }
+public function digitalMarketing()
+{
+    return view('service.digital-marketing');
+}
+
 
 }

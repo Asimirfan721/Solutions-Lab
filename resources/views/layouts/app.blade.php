@@ -31,7 +31,7 @@
         <a href="/services/product-prototyping" class="block px-4 py-2 hover:bg-gray-100 border-b">Product Prototyping</a>
         <a href="/services/blockchain" class="block px-4 py-2 hover:bg-gray-100 border-b">Blockchain</a>
         <a href="/services/cloud-computing" class="block px-4 py-2 hover:bg-gray-100 border-b">Cloud Development</a>
-        <a href="/services" class="block px-4 py-2 hover:bg-gray-100">Digital Marketing</a>
+        <a href="/services/digital-marketing" class="block px-4 py-2 hover:bg-gray-100">Digital Marketing</a>
     </div>
 </div>
                 <a href="/case-studies" class="hover:text-red-500">Case Studies</a>
