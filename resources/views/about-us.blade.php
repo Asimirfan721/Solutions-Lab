@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Hero Section -->
-<section class="relative bg-cover bg-center h-[70vh]" style="background-image: url('/images/about-us-bg.jpg');">
+<section class="relative bg-cover bg-center h-[70vh]" style="background-image: url('/images/about-us.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center text-white px-4">
         <h1 class="text-5xl font-bold mb-4">About Us</h1>
         <h2 class="text-2xl text-red-500 font-semibold">Advance your Business</h2>
