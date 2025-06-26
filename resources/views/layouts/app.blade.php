@@ -19,7 +19,7 @@
                 <a href="/" class="hover:text-red-500">Home</a>
                 <a href="/about-us" class="hover:text-red-500">About Us</a>
                 <div class="relative group inline-block">
-    <a href="/services" class="hover:text-red-500">Services</a>
+    <a href="/" class="hover:text-red-500">Services</a>
 
     <!-- Dropdown -->
    <div class="absolute hidden group-hover:block bg-white shadow-lg text-black mt-2 rounded w-56 z-50 transition-all duration-300 ease-in-out">
@@ -29,7 +29,7 @@
         <a href="/services/animation" class="block px-4 py-2 hover:bg-gray-100 border-b">Animations</a>
         <a href="/services/graphic-design" class="block px-4 py-2 hover:bg-gray-100 border-b">Graphic Designer</a>
         <a href="/services/product-prototyping" class="block px-4 py-2 hover:bg-gray-100 border-b">Product Prototyping</a>
-        <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Blockchain</a>
+        <a href="/services/blockchain" class="block px-4 py-2 hover:bg-gray-100 border-b">Blockchain</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100 border-b">Cloud Development</a>
         <a href="/services" class="block px-4 py-2 hover:bg-gray-100">Digital Marketing</a>
     </div>

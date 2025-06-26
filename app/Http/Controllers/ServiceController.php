@@ -26,5 +26,10 @@ public function productPrototyping()
 {
     return view('service.product-prototyping');
 }
+public function blockchain()
+{
+    return view('service.blockchain');
+}
+
 
 }
