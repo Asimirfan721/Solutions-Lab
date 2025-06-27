@@ -1,65 +1,99 @@
 @extends('layouts.app')
 
+@section('title', 'Blockchain Development Services')
+
 @section('content')
-<div class="container py-5">
-    <h1>How to Get the Best Blockchain Development Services?</h1>
-    <p>We provide the right mix of skills to match your unique infrastructure, challenges, and strategic vision.</p>
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
 
-    <h2>What We Can Provide as the Top Blockchain Development Services?</h2>
-    <p>
-        Blockchain is changing the way the world lives and works, but it is only a means to an end, not an end in itself.
-        We use this technology to help drive transformation into the future.
-    </p>
-    <p>
-        We start by understanding the specific needs of our customers and then apply blockchain innovation in practice. 
-        Conversations go deeper when new opportunities arise.
-    </p>
-    <p>
-        As a leading independent technology organization, we bring together alliances, partnerships, and leaders 
-        from all aspects of the blockchain ecosystem.
-    </p>
+        <!-- Hero Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Blockchain Development Services</h1>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                We integrate blockchain into your business infrastructure to drive secure, transparent, and future-ready digital transformation.
+            </p>
+        </div>
 
-    <h2>How We Implement Our Blockchain Development Services</h2>
-    <ul>
-        <li><strong>Requirement Gathering and Analysis:</strong> Understanding the client's needs, goals, and required features.</li>
-        <li><strong>Architecture and Design:</strong> Designing blockchain architecture—public, private, or consortium.</li>
-        <li><strong>Development:</strong> Implementing infrastructure, setting up nodes, protocols, and consensus mechanisms.</li>
-        <li><strong>Testing and Quality Assurance:</strong> Conducting unit, integration, and security tests to ensure quality and reliability.</li>
-        <li><strong>Deployment and Launch:</strong> Deploying blockchain solution to public or private network environments.</li>
-        <li><strong>Maintenance and Upgrades:</strong> Providing ongoing support, monitoring, and enhancements.</li>
-    </ul>
+        <!-- Introduction -->
+        <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">What Makes Us a Top Blockchain Development Company?</h2>
+            <p class="text-gray-700 mb-3">
+                At <strong>Instant Solutions Lab</strong>, we don't just use blockchain as a buzzword—we implement it to solve real-world business challenges. Whether it's decentralization, transparency, or automation you're aiming for, we deliver blockchain solutions that work.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mt-4">
+                <li>Tailored blockchain strategies based on your needs.</li>
+                <li>Integration of innovative ecosystems, platforms, and alliances.</li>
+                <li>Enterprise-grade decentralized app (dApp) development.</li>
+                <li>Proven track record of delivering blockchain-powered business outcomes.</li>
+            </ul>
+        </div>
 
-    <h2>Our Tools of the Trade</h2>
-    <p>We use industry-leading technologies to build secure and scalable blockchain systems:</p>
-    <ul>
-        <li>Mobile Technologies</li>
-        <li>UI/UX</li>
-        <li>Web & Hybrid</li>
-        <li>Backend & Database</li>
-        <li>Cloud & Push Notification</li>
-        <li>App Analytics & Payments</li>
-    </ul>
+        <!-- Process -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">How We Deliver Our Blockchain Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                @foreach([
+                    ['title' => 'Requirement Gathering & Analysis', 'desc' => 'Understand your goals and define required features.'],
+                    ['title' => 'Architecture & Design', 'desc' => 'Choose and build the right type of blockchain—public, private, or consortium.'],
+                    ['title' => 'Development', 'desc' => 'Set up infrastructure, nodes, protocols, and consensus algorithms.'],
+                    ['title' => 'Testing & QA', 'desc' => 'Ensure quality and security with end-to-end testing.'],
+                    ['title' => 'Deployment & Launch', 'desc' => 'Launch the blockchain on live environments, public or private.'],
+                    ['title' => 'Maintenance & Upgrades', 'desc' => 'Monitor and improve the system as your needs evolve.'],
+                ] as $step)
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h3 class="text-red-600 font-bold mb-2">{{ $step['title'] }}</h3>
+                    <p class="text-gray-700 text-sm">{{ $step['desc'] }}</p>
+                </div>
+                @endforeach
+            </div>
+        </div>
 
-    <h3>Technologies:</h3>
-    <ul>
-        <li>React Native</li>
-        <li>Ionic</li>
-        <li>Flutter</li>
-        <li>Swift</li>
-        <li>Kotlin</li>
-    </ul>
+        <!-- Tools and Tech -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Tools We Use</h2>
+            <p class="text-gray-700 mb-4">We build secure and scalable blockchain systems using modern tools and frameworks:</p>
+            <div class="flex flex-wrap gap-4 text-sm text-gray-700">
+                @foreach(['Smart Contracts', 'dApps', 'Solidity', 'Hyperledger', 'Ethereum', 'NFT', 'Tokenomics'] as $tool)
+                    <span class="bg-gray-100 px-4 py-2 rounded-full shadow-sm">{{ $tool }}</span>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>FAQs</h2>
-    <p><strong>What is blockchain development and why is it important for businesses?</strong></p>
-    <p>Blockchain development involves building decentralized applications that offer transparency, security, and automation for business operations.</p>
+        <!-- Technologies -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Technologies We Support</h2>
+            <div class="flex flex-wrap gap-4">
+                @foreach(['React Native', 'Ionic', 'Flutter', 'Swift', 'Kotlin'] as $tech)
+                    <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">
+                        {{ $tech }}
+                    </span>
+                @endforeach
+            </div>
+        </div>
 
-    <p><strong>What services are typically offered by blockchain development companies?</strong></p>
-    <p>Smart contract development, dApp development, private/public blockchain setup, wallet integration, and consulting.</p>
+        <!-- FAQs -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <p class="font-semibold">What is blockchain development and why does it matter?</p>
+                    <p>Blockchain development builds decentralized systems that enhance security, transparency, and trust across industries.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">What blockchain services do you offer?</p>
+                    <p>Smart contract development, dApps, public/private blockchains, wallet integrations, and more.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">How does your development process work?</p>
+                    <p>We follow a structured approach: planning → architecture → coding → testing → launch → support.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">How long does blockchain development take?</p>
+                    <p>It varies from a few weeks for simple apps to several months for full enterprise-grade solutions.</p>
+                </div>
+            </div>
+        </div>
 
-    <p><strong>How does the blockchain development process typically work?</strong></p>
-    <p>It begins with planning, architecture design, development, rigorous testing, and deployment, followed by maintenance.</p>
-
-    <p><strong>How long does it take to develop a blockchain solution?</strong></p>
-    <p>It depends on project complexity — simple projects may take weeks, while enterprise-grade solutions can take several months.</p>
-</div>
+    </div>
+</section>
 @endsection
