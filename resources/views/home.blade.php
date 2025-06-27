@@ -35,6 +35,7 @@
         <i class="fab fa-instagram text-black"></i>
     </a>
 </div>
+</section>
 
 <!-- Services Section -->
 <section class="py-20 bg-white">
