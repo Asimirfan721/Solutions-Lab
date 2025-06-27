@@ -65,7 +65,7 @@
     <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-6">Tools we use for our Digital Services</h2>
     <p class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto">
         Getting started with the project is as difficult as completing it, but with your idea and our tools and strategies,
-        together we can glide through this challenging journey.
+        together we can glide through this challenging journey. If you want to know more we are just one click away.
     </p>
 </section>
 
