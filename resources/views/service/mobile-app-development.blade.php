@@ -1,70 +1,88 @@
-@extends('layouts.app') {{-- Optional: Use your layout --}}
+@extends('layouts.app')
+
+@section('title', 'Mobile App Development')
 
 @section('content')
-<div class="container py-5">
-    <h1>Hiring the Right Mobile App Company</h1>
-    <p>Our team of developers knows how to tick all the marks when building the right mobile app.</p>
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+        <!-- Hero Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Mobile App Development Services</h1>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+                Our expert developers deliver seamless iOS and Android apps—from idea to execution—with performance, design, and security in mind.
+            </p>
+        </div>
 
-    <h2>Why Choose the Top Mobile App Development Company?</h2>
-    <p>
-        At Instant Solutions Lab we specialize in mobile application development services.
-        Our end-to-end app development includes custom iOS and Android application development.
-        From business analysis and design to app testing and release, our developers work diligently to ensure a premium user experience.
-    </p>
-    <p>
-        The work of our team speaks for itself providing guaranteed conversions and customer retention. 
-        Being at the top of the mobile application development services industry, our team implements the most rigid secure back ends 
-        and easy integration with all third-party systems.
-    </p>
-    <p>
-        The applications that we develop leverage and integrate many of the key technologies 
-        that have been gaining traction in recent years, including AR, VR, AI, and IoT.
-    </p>
-    <p><strong>We follow the ultimate 3D rule:</strong></p>
-    <ul>
-        <li>Design Artistically</li>
-        <li>Develop Proficiently</li>
-        <li>Deliver Reliably</li>
-    </ul>
-    <p>
-        From start to finish, we ensure our clients get innovative, interactive, and most importantly comprehensive applications.
-        Our talented team works consistently to help our clients realize their true potential and achieve the best possible results.
-    </p>
+        <!-- Why Choose Us -->
+        <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
+            <p class="text-gray-700 mb-3">
+                Instant Solutions Lab specializes in full-cycle mobile app development including UI/UX design, native & cross-platform apps, app testing, and launch strategies.
+            </p>
+            <p class="text-gray-700 mb-3">
+                Our apps integrate cutting-edge tech like AR, VR, AI, and IoT, ensuring smooth performance, secure backends, and third-party system integration.
+            </p>
+            <p class="text-gray-700">
+                <strong class="text-red-600">We follow the 3D Rule:</strong> Design Artistically, Develop Proficiently, Deliver Reliably.
+            </p>
+        </div>
 
-    <h2>Our Mobile App Development Services</h2>
-    <ul>
-        <li><strong>UI/UX Strategy:</strong> With customized mobile app development, you get to choose your user smart interface.</li>
-        <li><strong>Employ Skilled Mobile Developers:</strong> Our developers are available to provide you with mobile applications tailored to your liking.</li>
-        <li><strong>Tailored Mobile Applications Development:</strong> Using the right iOS and Android tools, we deliver compelling user interfaces.</li>
-        <li><strong>REST API Building:</strong> Our REST APIs enhance flexibility, performance, and scalability of your app.</li>
-    </ul>
+        <!-- Services Offered -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Mobile App Development Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                @foreach([
+                    ['title' => 'UI/UX Strategy', 'desc' => 'Design user-friendly interfaces for an optimal experience.'],
+                    ['title' => 'Skilled Mobile Developers', 'desc' => 'Custom mobile app solutions built to meet your vision.'],
+                    ['title' => 'Tailored App Development', 'desc' => 'Develop powerful apps using native & hybrid tools.'],
+                    ['title' => 'REST API Integration', 'desc' => 'Enable scalable and flexible backend architecture.']
+                ] as $service)
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-red-600 text-lg font-semibold mb-2">{{ $service['title'] }}</h4>
+                    <p class="text-gray-700">{{ $service['desc'] }}</p>
+                </div>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>Our Tools of the Trade</h2>
-    <p>We use modern tools and technologies to deliver cutting-edge mobile applications:</p>
-    <ul>
-        <li>Mobile Technologies</li>
-        <li>UI/UX</li>
-        <li>Web & Hybrid</li>
-        <li>Backend & Database</li>
-        <li>Cloud & Push Notification</li>
-        <li>App Analytics & Payments</li>
-    </ul>
+        <!-- Tools & Technologies -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Tools of the Trade</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-gray-700">
+                @foreach([
+                    'Mobile Technologies', 'UI/UX', 'Web & Hybrid',
+                    'Backend & Database', 'Cloud & Push Notification', 'App Analytics & Payments'
+                ] as $tool)
+                <div class="bg-white p-4 rounded shadow hover:shadow-md transition">{{ $tool }}</div>
+                @endforeach
+            </div>
+        </div>
 
-    <h3>Technologies:</h3>
-    <ul>
-        <li>React Native</li>
-        <li>Ionic</li>
-        <li>Flutter</li>
-        <li>Swift</li>
-        <li>Kotlin</li>
-    </ul>
+        <!-- Tech Stack -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Technologies We Use</h3>
+            <div class="flex flex-wrap gap-4">
+                @foreach(['React Native', 'Ionic', 'Flutter', 'Swift', 'Kotlin'] as $tech)
+                <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full shadow text-sm font-medium">
+                    {{ $tech }}
+                </span>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>FAQs</h2>
-    <p><strong>What is mobile application development?</strong></p>
-    <p>
-        Mobile application development is the process of creating software applications that run on mobile devices.
-        It includes designing, building, testing, and deploying apps for platforms like Android and iOS, 
-        providing useful functionality to users through an intuitive interface.
-    </p>
-</div>
+        <!-- FAQs -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">FAQs</h2>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <p class="font-semibold">What is mobile application development?</p>
+                    <p>
+                        It’s the process of designing, building, and deploying software that runs on mobile platforms like Android & iOS,
+                        providing functional, engaging, and scalable applications for users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
