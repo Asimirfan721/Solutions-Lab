@@ -1,65 +1,100 @@
 @extends('layouts.app')
 
+@section('title', 'Graphic Designing Services')
+
 @section('content')
-<div class="container py-5">
-    <h1>How to Get the Best Graphic Designing Services?</h1>
-    <p>Our team of determined professionals work to represent the evolving brand image.</p>
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
 
-    <h2>What We Can Offer as the Top Graphic Designing Services?</h2>
-    <p>
-        Our graphic designer team has mastered the art of design and is familiar with the corporate world. 
-        They demonstrate this through their deep understanding of the lasting impact of good design on branding.
-    </p>
-    <p>
-        As a leading visual design company, we have one goal in everything we do:
-        <strong>To differentiate our work from others for all that we do.</strong>
-    </p>
-    <p>
-        Businesses of all sizes trust our graphic design services. Comprehensive yet affordable – we offer real value and ROI.
-        From startups and individuals to long-established companies. From simple logo designs to complete rebranding of corporate identities. 
-        Each customer receives individual attention and the perfection they desire.
-    </p>
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Graphic Designing Services</h1>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                We craft powerful visual identities that communicate your brand’s purpose, vision, and value.
+            </p>
+        </div>
 
-    <h2>Our Graphic Design Services</h2>
-    <ul>
-        <li><strong>Discovery:</strong> We gather requirements, research industry trends, and understand your brand for deeper insights.</li>
-        <li><strong>Design Concept Development:</strong> We create wireframes and initial concepts aligned with your goals and expectations.</li>
-        <li><strong>Design Refinement:</strong> Feedback is welcomed and revisions are made to fine-tune the design until it's perfect.</li>
-        <li><strong>Finalization:</strong> We craft the final layout with visual harmony, hierarchy, and readability.</li>
-        <li><strong>Delivery:</strong> We deliver files in all required formats along with brand usage guidelines.</li>
-    </ul>
+        <!-- Intro -->
+        <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
+            <p class="text-gray-700 mb-3">
+                Our design team blends creativity and business understanding to create visuals that resonate with your audience and leave a lasting impression.
+            </p>
+            <p class="text-gray-700 mb-3">
+                As a top-tier visual design company, our mission is simple: 
+                <span class="text-red-600 font-semibold">Create designs that stand apart and elevate brand value.</span>
+            </p>
+            <p class="text-gray-700">
+                From basic logos to complete branding solutions, we deliver high-impact results with a personal touch—whether you’re a startup or an enterprise.
+            </p>
+        </div>
 
-    <h2>Our Tools of the Trade</h2>
-    <p>We use the latest tools and design technologies to ensure creative and impactful results:</p>
-    <ul>
-        <li>Mobile Technologies</li>
-        <li>UI/UX</li>
-        <li>Web & Hybrid</li>
-        <li>Backend & Database</li>
-        <li>Cloud & Push Notification</li>
-        <li>App Analytics & Payments</li>
-    </ul>
+        <!-- Services -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Graphic Design Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                @foreach([
+                    ['title' => 'Discovery', 'desc' => 'In-depth research and understanding of your business, goals, and audience.'],
+                    ['title' => 'Concept Development', 'desc' => 'Initial design directions created to match your brand personality.'],
+                    ['title' => 'Design Refinement', 'desc' => 'Iterative feedback process ensures the design is polished to perfection.'],
+                    ['title' => 'Finalization', 'desc' => 'High-resolution design files with strong layout, typography, and harmony.'],
+                    ['title' => 'Delivery', 'desc' => 'All formats delivered along with brand usage guidelines.']
+                ] as $step)
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h4 class="text-red-600 font-semibold mb-2">{{ $step['title'] }}</h4>
+                    <p class="text-gray-700">{{ $step['desc'] }}</p>
+                </div>
+                @endforeach
+            </div>
+        </div>
 
-    <h3>Technologies:</h3>
-    <ul>
-        <li>React Native</li>
-        <li>Ionic</li>
-        <li>Flutter</li>
-        <li>Swift</li>
-        <li>Kotlin</li>
-    </ul>
+        <!-- Tools -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Tools & Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-gray-700">
+                @foreach([
+                    'Adobe Photoshop', 'Adobe Illustrator', 'Figma',
+                    'Canva Pro', 'InDesign', 'Sketch'
+                ] as $tool)
+                <div class="bg-white p-4 rounded shadow hover:shadow-md transition">{{ $tool }}</div>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>FAQs</h2>
-    <p><strong>What is graphic design and why is it important for businesses?</strong></p>
-    <p>Graphic design is visual communication using typography, imagery, and layout. It's crucial for brand identity, customer engagement, and marketing success.</p>
+        <!-- Technologies -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Technologies We Integrate</h3>
+            <div class="flex flex-wrap gap-4">
+                @foreach(['React Native', 'Ionic', 'Flutter', 'Swift', 'Kotlin'] as $tech)
+                <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full shadow text-sm font-medium">
+                    {{ $tech }}
+                </span>
+                @endforeach
+            </div>
+        </div>
 
-    <p><strong>What services are typically offered by graphic design agencies?</strong></p>
-    <p>Logo design, branding, packaging, marketing material design, social media content, and more.</p>
-
-    <p><strong>How do graphic design agencies work with clients?</strong></p>
-    <p>Through consultations, drafts, feedback loops, and final delivery. Communication and revisions ensure alignment with client vision.</p>
-
-    <p><strong>How long does it take to complete a graphic design project?</strong></p>
-    <p>Project duration varies depending on complexity. It may range from a few days for logos to several weeks for full branding packages.</p>
-</div>
-@endsection
+        <!-- FAQs -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">FAQs</h2>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <p class="font-semibold">What is graphic design and why is it important?</p>
+                    <p>It’s the art of communication through visuals—crucial for branding, marketing, and connecting with your audience.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">What design services do you offer?</p>
+                    <p>Logo design, brand identity, brochures, packaging, social media kits, and more.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">How do you collaborate with clients?</p>
+                    <p>We start with consultations, share drafts, gather feedback, and revise until satisfaction is achieved.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">How long does a project take?</p>
+                    <p>It depends on the scope. A logo might take 3–5 days, while full branding could take a few weeks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endsec
