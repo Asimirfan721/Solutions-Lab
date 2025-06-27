@@ -1,67 +1,102 @@
 @extends('layouts.app')
 
+@section('title', 'Product Prototyping Services')
+
 @section('content')
-<div class="container py-5">
-    <h1>Getting The Top Product Prototyping Development Services</h1>
-    <p>Got your next product blueprint ready or looking to turn your idea into reality?</p>
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">
+                Product Prototyping Development Services
+            </h1>
+            <p class="text-gray-700 text-lg">
+                Got your next product blueprint ready? Let’s transform your idea into reality with precision and innovation.
+            </p>
+        </div>
 
-    <h2>How We Provide the Best Product Prototyping Development Services</h2>
-    <p>
-        Our team of designers and developers are well known for providing efficient, quick, and measurable product prototypes with unmatchable precision and mastery.
-    </p>
-    <p>
-        We start from scratch building the product’s success. We handle each detail of your product from designing and functionality to testing and launching.
-    </p>
-    <p>
-        We believe in getting things done the right way leaving no margin for error.
-    </p>
-    <p>
-        Our highly skilled team of experts guides you in pitching the product concept, eliminating any risks and blockages associated, and delivers a fully functional prototype for your final product.
-    </p>
-    <p>
-        Our product prototyping services include using alpha and beta testing, functional prototypes, interface design, and clickable wireframes among others. 
-        This way our clients get a full review of their product.
-    </p>
+        <!-- How We Work -->
+        <div class="bg-white p-8 rounded-lg shadow mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">How We Deliver the Best</h2>
+            <p class="text-gray-700 mb-3">
+                Our experienced design and development team crafts efficient, measurable product prototypes with exceptional speed and accuracy.
+            </p>
+            <p class="text-gray-700 mb-3">
+                From ideation to launch, we handle every detail—design, functionality, testing, and final execution—ensuring nothing is left behind.
+            </p>
+            <p class="text-gray-700 mb-3">
+                With precision and clarity, our process guides you to pitch your product confidently, identify risks, and develop a full-functional prototype.
+            </p>
+            <p class="text-gray-700">
+                We use alpha/beta testing, clickable wireframes, and functional prototypes to help you see the full picture before launch.
+            </p>
+        </div>
 
-    <h2>Our Product Prototyping Development Services</h2>
-    <ul>
-        <li><strong>Efficient MVP:</strong> We build MVPs to validate funding and deliver a stable, bug-free version of your idea.</li>
-        <li><strong>Quick Prototypes:</strong> Rapid prototyping to reduce risks, evaluate performance, and ensure practicality.</li>
-        <li><strong>Better Dependability Guaranteed:</strong> Prototypes help identify and resolve performance issues before full-scale development.</li>
-        <li><strong>Pitch Your Prototype:</strong> A working prototype is essential for pitching to investors and stakeholders.</li>
-    </ul>
+        <!-- Services Offered -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Prototyping Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                @foreach([
+                    ['title' => 'Efficient MVP', 'desc' => 'We build MVPs that are funding-ready and stable.'],
+                    ['title' => 'Quick Prototypes', 'desc' => 'Rapid iterations that save time and reduce risk.'],
+                    ['title' => 'Dependability Guaranteed', 'desc' => 'Identify and fix performance issues early.'],
+                    ['title' => 'Investor-Ready Prototypes', 'desc' => 'Present functional demos to attract stakeholders.']
+                ] as $service)
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-red-600 text-lg font-semibold mb-2">{{ $service['title'] }}</h4>
+                    <p class="text-gray-700">{{ $service['desc'] }}</p>
+                </div>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>Our Tools of the Trade</h2>
-    <p>We use modern tools to bring your prototype to life:</p>
-    <ul>
-        <li>Mobile Technologies</li>
-        <li>UI/UX</li>
-        <li>Web & Hybrid</li>
-        <li>Backend & Database</li>
-        <li>Cloud & Push Notification</li>
-        <li>App Analytics & Payments</li>
-    </ul>
+        <!-- Tools Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Tools of the Trade</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-gray-700">
+                @foreach([
+                    'Mobile Technologies', 'UI/UX', 'Web & Hybrid',
+                    'Backend & Database', 'Cloud & Push Notification', 'App Analytics & Payments'
+                ] as $tool)
+                <div class="bg-white p-4 rounded shadow hover:shadow-md transition">{{ $tool }}</div>
+                @endforeach
+            </div>
+        </div>
 
-    <h3>Technologies:</h3>
-    <ul>
-        <li>React Native</li>
-        <li>Ionic</li>
-        <li>Flutter</li>
-        <li>Swift</li>
-        <li>Kotlin</li>
-    </ul>
+        <!-- Technology Stack -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Technologies We Use</h3>
+            <div class="flex flex-wrap gap-4">
+                @foreach(['React Native', 'Ionic', 'Flutter', 'Swift', 'Kotlin'] as $tech)
+                <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full shadow text-sm font-medium">
+                    {{ $tech }}
+                </span>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>FAQs</h2>
-    <p><strong>What is product prototyping development?</strong></p>
-    <p>It is the process of creating an early model or sample of a product to test its concept, design, and functionality before full production.</p>
-
-    <p><strong>What are the benefits of product prototyping?</strong></p>
-    <p>It reduces risk, saves cost, improves design through early feedback, and helps secure investor interest.</p>
-
-    <p><strong>What types of prototypes can be developed?</strong></p>
-    <p>Alpha and beta versions, clickable wireframes, functional models, and visual mockups.</p>
-
-    <p><strong>How long does it take to develop a product prototype?</strong></p>
-    <p>Depending on complexity, it can range from a few days to a few weeks.</p>
-</div>
+        <!-- FAQ Section -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">FAQs</h2>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <p class="font-semibold">What is product prototyping development?</p>
+                    <p>It involves creating a model or sample of a product to test its concept, functionality, and design before production.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">What are the benefits of prototyping?</p>
+                    <p>It reduces development risk, improves design accuracy, saves time and cost, and enhances investor confidence.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">What types of prototypes can you create?</p>
+                    <p>Alpha and beta versions, clickable wireframes, visual mockups, and fully functional models.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">How long does a prototype take to build?</p>
+                    <p>Depending on complexity, it may take a few days to a few weeks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
