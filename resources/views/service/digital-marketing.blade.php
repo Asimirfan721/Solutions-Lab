@@ -1,62 +1,99 @@
 @extends('layouts.app')
 
+@section('title', 'Digital Marketing Services')
+
 @section('content')
-<div class="container py-5">
-    <h1>How to Get the Best Digital Marketing Services?</h1>
-    <p>Avail the maximum reach with the most efficient turnover as our team works to provide you with top digital marketing services.</p>
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
 
-    <h2>How Do We Provide the Top Digital Marketing Services?</h2>
-    <p>
-        Instant Solutions Lab specializes in creating and promoting content for B2B, also known as content marketing. 
-        We understand that not all businesses seem “exciting” on the surface—but every brand has a story worth telling.
-    </p>
-    <p>
-        We work with B2B brands to discover compelling angles and develop content strategies that attract the right audience. 
-        This includes social media engagement, article distribution, infographics, and guest blogging to broaden your digital presence.
-    </p>
+        <!-- Page Heading -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Digital Marketing Services</h1>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Maximize reach. Boost conversions. Build long-term brand authority with our expert strategies.
+            </p>
+        </div>
 
-    <h2>Our Digital Marketing Services</h2>
-    <ul>
-        <li><strong>Discovery and Planning:</strong> We align your business goals with the right marketing strategy after analyzing your target market.</li>
-        <li><strong>Website and Content Optimization:</strong> Improving site UX, speed, and SEO factors for better visibility and conversions.</li>
-        <li><strong>Search Engine Marketing (SEM) & PPC:</strong> We manage PPC ad campaigns on platforms like Google Ads to generate traffic and leads.</li>
-        <li><strong>Social Media Marketing:</strong> We build your presence across relevant platforms to engage users and drive brand awareness.</li>
-        <li><strong>Email Marketing:</strong> Audience segmentation and personalized campaigns help increase engagement and repeat business.</li>
-        <li><strong>Search Engine Optimization (SEO):</strong> We optimize your pages, content, and metadata for better organic search performance.</li>
-        <li><strong>Analytics and Reporting:</strong> With tools like Google Analytics, we monitor performance, refine strategies, and keep you informed.</li>
-    </ul>
+        <!-- Intro Section -->
+        <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why Our Digital Marketing Services Stand Out</h2>
+            <p class="text-gray-700 mb-3">
+                At <strong>Instant Solutions Lab</strong>, we craft customized content strategies even for industries that may seem "unexciting" at first glance—because every brand has a story worth telling.
+            </p>
+            <p class="text-gray-700">
+                From B2B content marketing to social media amplification and SEO, we help your brand shine across digital channels. Let us help you tell your story, grow your traffic, and convert leads.
+            </p>
+        </div>
 
-    <h2>Our Tools of the Trade</h2>
-    <p>We use powerful tools and frameworks to execute effective digital marketing campaigns:</p>
-    <ul>
-        <li>Mobile Technologies</li>
-        <li>UI/UX</li>
-        <li>Web & Hybrid</li>
-        <li>Backend & Database</li>
-        <li>Cloud & Push Notification</li>
-        <li>App Analytics & Payments</li>
-    </ul>
+        <!-- Services List -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">What We Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                @foreach([
+                    ['title' => 'Discovery & Planning', 'desc' => 'Aligning goals with strategy and analyzing your target market.'],
+                    ['title' => 'Website & Content Optimization', 'desc' => 'Enhancing UX, page speed, and SEO factors.'],
+                    ['title' => 'Search Engine Marketing & PPC', 'desc' => 'Google Ads and paid campaigns for targeted leads.'],
+                    ['title' => 'Social Media Marketing', 'desc' => 'Building your online presence and driving engagement.'],
+                    ['title' => 'Email Marketing', 'desc' => 'Segmented campaigns that increase customer loyalty.'],
+                    ['title' => 'Search Engine Optimization (SEO)', 'desc' => 'Boosting visibility through on-page and off-page strategies.'],
+                    ['title' => 'Analytics & Reporting', 'desc' => 'We track progress and optimize results with deep insights.'],
+                ] as $service)
+                <div class="bg-white rounded-lg shadow p-6 hover:shadow-md transition">
+                    <h3 class="text-red-600 font-bold mb-2">{{ $service['title'] }}</h3>
+                    <p class="text-gray-700 text-sm">{{ $service['desc'] }}</p>
+                </div>
+                @endforeach
+            </div>
+        </div>
 
-    <h3>Technologies:</h3>
-    <ul>
-        <li>React Native</li>
-        <li>Ionic</li>
-        <li>Flutter</li>
-        <li>Swift</li>
-        <li>Kotlin</li>
-    </ul>
+        <!-- Tools -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Tools We Use</h2>
+            <div class="flex flex-wrap gap-4 text-sm text-gray-700">
+                @foreach([
+                    'Google Analytics', 'Google Ads', 'Meta Business Suite', 'Mailchimp', 
+                    'Ahrefs', 'SEMrush', 'Buffer', 'Hootsuite', 'Canva', 'WordPress SEO Plugins'
+                ] as $tool)
+                <span class="bg-gray-100 px-4 py-2 rounded-full shadow-sm">{{ $tool }}</span>
+                @endforeach
+            </div>
+        </div>
 
-    <h2>FAQs</h2>
-    <p><strong>What is digital marketing?</strong></p>
-    <p>Digital marketing is the promotion of products or services through digital channels like search engines, social media, email, and websites.</p>
+        <!-- Technologies (if applicable) -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Technologies We Integrate</h2>
+            <div class="flex flex-wrap gap-4">
+                @foreach(['React Native', 'Ionic', 'Flutter', 'Swift', 'Kotlin'] as $tech)
+                <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">
+                    {{ $tech }}
+                </span>
+                @endforeach
+            </div>
+        </div>
 
-    <p><strong>What services are typically offered in digital marketing?</strong></p>
-    <p>SEO, SEM, social media marketing, email campaigns, content marketing, and analytics are key components.</p>
+        <!-- FAQs -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <p class="font-semibold">What is digital marketing?</p>
+                    <p>It’s the use of digital platforms—search engines, websites, social media, email, and mobile apps—to promote products and services.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">What services do you offer?</p>
+                    <p>SEO, PPC, email campaigns, content creation, analytics, and social media marketing.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">When will I start seeing results?</p>
+                    <p>SEO takes 3–6 months, while PPC and social media can show faster results, sometimes within days.</p>
+                </div>
+                <div>
+                    <p class="font-semibold">How do I choose the right provider?</p>
+                    <p>Choose an agency with a strategic approach, transparency, real results, and a solid portfolio.</p>
+                </div>
+            </div>
+        </div>
 
-    <p><strong>How long does it take to see results from digital marketing campaigns?</strong></p>
-    <p>It varies, but typically SEO takes 3–6 months, while PPC and social media can produce quicker results.</p>
-
-    <p><strong>How do I choose the right digital marketing service provider?</strong></p>
-    <p>Look for experience, strategy alignment with your business goals, transparency, and proven track records.</p>
-</div>
+    </div>
+</section>
 @endsection
