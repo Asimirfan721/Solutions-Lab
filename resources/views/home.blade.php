@@ -21,21 +21,20 @@
     </div>
 
     <!-- Social Sidebar -->
-    <div class="fixed top-1/3 right-0 z-50 flex flex-col items-center space-y-3">
-        <a href="#" class="bg-white p-2 shadow hover:bg-gray-100">
-            <i class="fab fa-facebook-f text-black"></i>
-        </a>
-        <a href="#" class="bg-white p-2 shadow hover:bg-gray-100">
-            <i class="fab fa-linkedin-in text-black"></i>
-        </a>
-        <a href="#" class="bg-white p-2 shadow hover:bg-gray-100">
-            <i class="fab fa-youtube text-black"></i>
-        </a>
-        <a href="#" class="bg-white p-2 shadow hover:bg-gray-100">
-            <i class="fab fa-instagram text-black"></i>
-        </a>
-    </div>
-</section>
+   <div class="fixed top-1/3 right-0 z-50 flex flex-col items-center space-y-3">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="bg-white p-2 shadow hover:bg-gray-100 rounded">
+        <i class="fab fa-facebook-f text-black"></i>
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="bg-white p-2 shadow hover:bg-gray-100 rounded">
+        <i class="fab fa-linkedin-in text-black"></i>
+    </a>
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="bg-white p-2 shadow hover:bg-gray-100 rounded">
+        <i class="fab fa-youtube text-black"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="bg-white p-2 shadow hover:bg-gray-100 rounded">
+        <i class="fab fa-instagram text-black"></i>
+    </a>
+</div>
 
 <!-- Services Section -->
 <section class="py-20 bg-white">
