@@ -20,7 +20,7 @@ class CaseStudyController extends Controller
 }
 public function hrp()
 {
-    return view('case-studies.hrp');
+    return view('case-studies.hrp'); // this is for 2nd project, it contains the Headche Relief porgramme project
 }
 
 }
