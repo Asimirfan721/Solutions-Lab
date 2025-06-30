@@ -28,9 +28,10 @@
                     <p class="text-gray-600 mt-2">
                         An EMR system crafted to revolutionize mental health care with intuitive patient and doctor workflows.
                     </p>
-                    <a href="#" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">
+                    <a href="{{ route('case-studies.show', 'emr-system') }}" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">
                         View Case Study
                     </a>
+                    
                 </div>
             </div>
 

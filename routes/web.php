@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CaseStudyController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,6 +17,7 @@ Route::get('/', [HomeController::class, 'index']);
  Route::get('/case-studies', [PageController::class, 'caseStudies']);
 // Route::get('/careers', [PageController::class, 'careers']);
 // Route::get('/contact-us', [ContactController::class, 'index']);
+Route::get('/case-studies/{slug}', [CaseStudyController::class, 'show'])->name('case-studies.show');
 
 //Service Routes
 Route::get('/services/web-development', [ServiceController::class, 'webDevelopment'])->name('services.web');
