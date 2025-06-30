@@ -78,7 +78,7 @@
 
 <!-- Footer -->
 <footer class="bg-black text-white text-center py-6 mt-20">
-    <p>&copy; {{ date('Y') }} Effort Less Solutions. All Rights Reserved.</p>
+    <p>&copy; {{ date('Y') }} </p>
 </footer>
 <!-- Call to Action Section -->
 <section class="bg-black text-white py-16 text-center relative">
