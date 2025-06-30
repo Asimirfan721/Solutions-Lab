@@ -9,6 +9,7 @@ class CaseStudyController extends Controller
     public function show($slug)
 {
     // Example static content; in real use-case, pull from DB using the slug
+    //static content for the EMR system case study
     $caseStudy = [
         'title' => 'EMR System for Mental Health Care',
         'overview' => 'The EMR system (Electronic Medical Record)...',
