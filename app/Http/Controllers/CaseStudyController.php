@@ -18,5 +18,9 @@ class CaseStudyController extends Controller
 
     return view('case-studies.show', compact('caseStudy'));
 }
+public function hrp()
+{
+    return view('case-studies.hrp');
+}
 
 }

@@ -18,6 +18,8 @@ Route::get('/', [HomeController::class, 'index']);
 // Route::get('/careers', [PageController::class, 'careers']);
 // Route::get('/contact-us', [ContactController::class, 'index']);
 Route::get('/case-studies/{slug}', [CaseStudyController::class, 'show'])->name('case-studies.show');
+Route::get('/case-studies/hrp', [CaseStudyController::class, 'hrp'])->name('case-studies.hrp');
+
 
 //Service Routes
 Route::get('/services/web-development', [ServiceController::class, 'webDevelopment'])->name('services.web');
