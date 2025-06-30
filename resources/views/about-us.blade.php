@@ -80,5 +80,24 @@
 <footer class="bg-black text-white text-center py-6 mt-20">
     <p>&copy; {{ date('Y') }} Effort Less Solutions. All Rights Reserved.</p>
 </footer>
+<!-- Call to Action Section -->
+<section class="bg-black text-white py-16 text-center relative">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-red-500 mb-4">Let’s Collaborate on Your Project</h2>
+        <p class="text-lg md:text-xl mb-8">What are you waiting for? Get in touch with our team now.</p>
+
+        <div class="flex justify-center flex-wrap gap-4">
+            <a href="tel:+923201378853"
+               class="bg-white text-red-600 px-6 py-3 rounded shadow font-semibold hover:bg-gray-100 transition">
+                <i class="fas fa-phone-alt mr-2"></i> CALL NOW
+            </a>
+
+            <a href="#chat"
+               class="bg-red-600 text-white px-6 py-3 rounded shadow font-semibold hover:bg-red-700 transition">
+                <i class="fas fa-comments mr-2"></i> SLIDE IN OUR CHAT
+            </a>
+        </div>
+    </div>
+</section>
 
 @endsection
