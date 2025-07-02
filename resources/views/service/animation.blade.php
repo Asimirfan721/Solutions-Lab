@@ -3,16 +3,15 @@
 @section('title', 'Animation Services')
 
 @section('content')
-<section class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-16">
-
-        <!-- Hero -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Top-Tier Animation Services</h1>
-            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-                Whether it's 2D, 3D, whiteboard, or motion graphics — we bring your stories to life with stunning visuals and engaging motion.
-            </p>
-        </div>
+<section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('/images/animation.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">Top Tier Animation </h1>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow">
+            Whether it's 2D, 3D, whiteboard, or motion graphics — we bring your stories to life with stunning visuals and engaging motion.
+        </p>
+    </div>
+</section>
 
         <!-- Overview -->
         <div class="bg-white shadow-md rounded-lg p-8 mb-12">
