@@ -13,6 +13,9 @@
     </div>
 </section>
 
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+
         <!-- Intro -->
         <div class="bg-white rounded-lg shadow-md p-8 mb-12">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
@@ -96,4 +99,4 @@
         </div>
     </div>
 </section>
-@endsec
+@endsection
