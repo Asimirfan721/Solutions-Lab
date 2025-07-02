@@ -4,11 +4,12 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="bg-black text-white py-16 text-center">
-    <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-red-600">Case Studies</h1>
-        <p class="text-lg max-w-3xl mx-auto text-gray-300">
-            Explore our transformative work in web & mobile development, custom software, and immersive digital experiences.
+<section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('/images/contact-us.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">CASE STUDIES</h1>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow">
+           Explore our transformative work in web & mobile development, custom software, and immersive digital experiences.
         </p>
     </div>
 </section>
