@@ -3,14 +3,19 @@
 @section('title', 'Web Application Development')
 
 @section('content')
+<!-- Hero Section with Background Image -->
+<section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('/images/website-development.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">Web Application Development</h1>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow">
+            We design websites that are appealing, user-friendly, and performance-driven to help you achieve results that matter.
+        </p>
+    </div>
+</section>
+
 <section class="bg-gray-50 py-16">
     <div class="container mx-auto px-6 lg:px-16">
-        <!-- Heading -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Web Application Development</h1>
-            <p class="text-gray-700 text-lg">We design websites that are appealing, user-friendly, and performance-driven to help you achieve results that matter.</p>
-        </div>
-
         <!-- Why Hire Section -->
         <div class="bg-white rounded-lg shadow-md p-6 md:p-10 mb-12">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Hire the Best Web App Development Company?</h2>
