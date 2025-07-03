@@ -3,16 +3,7 @@
 @section('title', 'Blockchain Development Services')
 
 @section('content')
-<section class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-16">
 
-        <!-- Hero Section -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Blockchain Development Services</h1>
-            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-                We integrate blockchain into your business infrastructure to drive secure, transparent, and future-ready digital transformation.
-            </p>
-        </div>
 
         <!-- Introduction -->
         <div class="bg-white rounded-lg shadow-md p-8 mb-12">

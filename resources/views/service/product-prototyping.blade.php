@@ -16,25 +16,19 @@
 
         <!-- How We Work -->
         <div class="bg-white p-8 rounded-lg shadow mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">How We Deliver the Best</h2>
-            <p class="text-gray-700 mb-3">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 alignment text-center" style= "font-family: 'Times New Roman', Times, serif">How We Deliver the Best</h2>
+            <p class="text-gray-700 mb-3 text-center" style="font-family: 'Times New Roman', serif; font-size: 24px;">
                 Our experienced design and development team crafts efficient, measurable product prototypes with exceptional speed and accuracy.
-            </p>
-            <p class="text-gray-700 mb-3">
                 From ideation to launch, we handle every detail—design, functionality, testing, and final execution—ensuring nothing is left behind.
-            </p>
-            <p class="text-gray-700 mb-3">
-                With precision and clarity, our process guides you to pitch your product confidently, identify risks, and develop a full-functional prototype.
-            </p>
-            <p class="text-gray-700">
-                We use alpha/beta testing, clickable wireframes, and functional prototypes to help you see the full picture before launch.
+               With precision and clarity, our process guides you to pitch your product confidently, identify risks, and develop a full-functional prototype.
+               We use alpha/beta testing, clickable wireframes, and functional prototypes to help you see the full picture before launch.
             </p>
         </div>
 
         <!-- Services Offered -->
         <div class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Prototyping Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Our Prototyping Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
                 @foreach([
                     ['title' => 'Efficient MVP', 'desc' => 'We build MVPs that are funding-ready and stable.'],
                     ['title' => 'Quick Prototypes', 'desc' => 'Rapid iterations that save time and reduce risk.'],
@@ -51,8 +45,8 @@
 
         <!-- Tools Section -->
         <div class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Tools of the Trade</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-gray-700">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Our Tools of the Trade</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-gray-700 style">
                 @foreach([
                     'Mobile Technologies', 'UI/UX', 'Web & Hybrid',
                     'Backend & Database', 'Cloud & Push Notification', 'App Analytics & Payments'
@@ -64,8 +58,8 @@
 
         <!-- Technology Stack -->
         <div class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Technologies We Use</h3>
-            <div class="flex flex-wrap gap-4">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Technologies We Use</h3>
+            <div class="flex flex-wrap gap-4 text-center   text-gray-700 justify-center">
                 @foreach(['React Native', 'Ionic', 'Flutter', 'Swift', 'Kotlin'] as $tech)
                 <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full shadow text-sm font-medium">
                     {{ $tech }}
@@ -76,11 +70,11 @@
 
         <!-- FAQ Section -->
         <div class="bg-white rounded-lg shadow-md p-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">FAQs</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">FAQs</h2>
             <div class="space-y-6 text-gray-700">
                 <div>
-                    <p class="font-semibold">What is product prototyping development?</p>
-                    <p>It involves creating a model or sample of a product to test its concept, functionality, and design before production.</p>
+                    <p class="font-semibold text-center">What is product prototyping development?</p>
+                    <p class="text-center">It involves creating a model or sample of a product to test its concept, functionality, and design before production.</p>
                 </div>
                 <div>
                     <p class="font-semibold">What are the benefits of prototyping?</p>
