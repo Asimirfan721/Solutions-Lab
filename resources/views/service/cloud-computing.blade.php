@@ -3,16 +3,17 @@
 @section('title', 'Cloud Computing Services')
 
 @section('content')
-<section class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-16">
-
-        <!-- Hero Section -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Cloud Computing Development</h1>
-            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-                Empower your business with secure, scalable, and high-performance cloud computing services designed for reliability and speed.
-            </p>
-        </div>
+<section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('/images/our-work.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg"> Cloud-Computing</h1>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow">
+         How to get the best
+Cloud Computing Services? </p>
+ 
+        </p>
+    </div>
+</section>
 
         <!-- Why Cloud Section -->
         <div class="bg-white rounded-lg shadow-md p-8 mb-12">
