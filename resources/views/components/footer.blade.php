@@ -24,14 +24,15 @@
         <div>
             <h3 class="text-lg font-semibold mb-2 text-red-500">Core Services</h3>
             <ul class="space-y-1 text-sm">
-                <li>Web App Development</li>
-                <li>Mobile App Development</li>
-                <li>Animations</li>
-                <li>Graphic Designer</li>
-                <li>Product Prototyping</li>
-                <li>Blockchain</li>
-                <li>Cloud Development</li>
-                <li>Digital Marketing</li>
+
+                <li> <a href="/services/web-development" class ="hover:underline"> Web App Development</a></li>
+                <li><a href="/services/mobile-app-development" class ="hover:underline">Mobile App Development</a></li>
+                <li><a href="/services/animation" class ="hover:underline"> Animations</a></li>
+                <li><a href="/services/graphic-design" class ="hover:underline"> Graphic Designer</a></li>
+                <li><a href="/services/product-prototyping" class ="hover:underline"> Product Prototyping</a></li>
+                <li><a href="/services/blockchain" class ="hover:underline"> Blockchain</a></li>
+                <li><a href="/services/cloud-computing" class ="hover:underline"> Cloud Development</a></li>
+                <li><a href="/services/digital-marketing" class ="hover:underline">Digital Marketing</a></li>
             </ul>
         </div>
 

@@ -19,7 +19,7 @@
                 <a href="/" class="hover:text-red-500">Home</a>
                 <a href="/about-us" class="hover:text-red-500">About Us</a>
                 <div class="relative group inline-block">
-    <a href="/" class="hover:text-red-500">Services</a>
+    <a href="" class="hover:text-red-500">Services</a>
 
     <!-- Dropdown -->
    <div class="absolute hidden group-hover:block bg-white shadow-lg text-black mt-2 rounded w-56 z-50 transition-all duration-300 ease-in-out">
