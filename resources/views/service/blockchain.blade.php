@@ -3,7 +3,18 @@
 @section('title', 'Blockchain Development Services')
 
 @section('content')
+<section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('/images/block-chain.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg"> BlockChain</h1>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow">
+         How to get the best
+BlockChain Development Services? </p>
+<p class ="text-red drop-shadow-lg"> We provide the right mix of skills to match your unique infrastructure, challenges, and strategic vision.
 
+        </p>
+    </div>
+</section>
 
         <!-- Introduction -->
         <div class="bg-white rounded-lg shadow-md p-8 mb-12">
