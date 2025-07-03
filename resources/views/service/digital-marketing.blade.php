@@ -3,16 +3,16 @@
 @section('title', 'Digital Marketing Services')
 
 @section('content')
-<section class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-16">
-
-        <!-- Page Heading -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Digital Marketing Services</h1>
-            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                Maximize reach. Boost conversions. Build long-term brand authority with our expert strategies.
-            </p>
-        </div>
+ <section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('/images/block-chain.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg"> Digital Marketing </h1>
+        <p class="text-lg text-white max-w-2xl mx-auto drop-shadow">
+          Maximize reach. Boost conversions. Build long-term brand authority with our expert strategies. </p>
+ 
+        </p>
+    </div>
+</section>
 
         <!-- Intro Section -->
         <div class="bg-white rounded-lg shadow-md p-8 mb-12">
