@@ -22,7 +22,7 @@
         <div class="grid gap-10 md:grid-cols-2 max-w-6xl mx-auto">
             <!-- CraveShare -->
             <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
-                <img src="{{ asset('images/craveshare.png') }}" alt="CraveShare" class="w-full h-56 object-cover">
+                <img src="{{ asset('images/HRP.jpg') }}" alt="CraveShare" class="w-full h-56 object-cover">
                 <div class="p-6 text-center">
                     <span class="text-sm font-medium text-white bg-red-600 px-3 py-1 rounded-full">Web Application</span>
                     <h3 class="text-2xl font-bold mt-4 text-gray-800">CraveShare</h3>
@@ -38,7 +38,7 @@
 
             <!-- HRP -->
             <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
-                <img src="{{ asset('images/hrp.png') }}" alt="HRP" class="w-full h-56 object-cover">
+                <img src="{{ asset('images/HRP1.jpg') }}" alt="HRP" class="w-full h-56 object-cover">
                 <div class="p-6 text-center">
                     <span class="text-sm font-medium text-white bg-red-600 px-3 py-1 rounded-full">Mobile Application</span>
                     <h3 class="text-2xl font-bold mt-4 text-gray-800">Headache Relief Program (HRP)</h3>
