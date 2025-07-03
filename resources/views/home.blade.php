@@ -11,8 +11,8 @@
             Digital Needs
         </h1>
         <div class="mt-8 flex flex-col md:flex-row justify-center gap-4">
-            <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition">
-                LET’S TURN THAT IDEA INTO REALITY
+            <a href="/contact-us" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition">
+                LET’S TURN  INTO REALITY
             </a>
             <a href="#" class="bg-white hover:bg-gray-100 text-black font-bold py-3 px-8 rounded-full shadow-lg border border-gray-200 transition">
                 READY TO TALK BUSINESS?
