@@ -40,21 +40,23 @@
 <!-- Services Section -->
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-6">
-        <h2 class="text-center text-red-600 text-lg font-semibold mb-2 tracking-wide uppercase">Comprehensive Digital Solution</h2>
-        <h3 class="text-center text-3xl md:text-4xl font-bold mb-12">Where Ingenuity Meets Renovation</h3>
+     <h2 class="text-center text-red-600 text-lg font-semibold mb-2 tracking-wide uppercase">Comprehensive Digital Solution</h2>
+<h3 class="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-800">Where Ingenuity Meets Renovation</h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            @foreach($services as $service)
-            <div class="bg-white border border-gray-100 p-8 rounded-xl shadow hover:shadow-xl transition flex flex-col items-center text-center">
-                <div class="text-4xl text-red-600 mb-4">
-                    {!! $service->icon !!}
-                </div>
-                <h4 class="font-bold text-lg mb-2">{{ $service->title }}</h4>
-                <p class="text-gray-600 text-sm mb-4">{{ $service->description }}</p>
-                <a href="{{ $service->link }}" class="text-white bg-red-600 hover:bg-red-700 font-semibold px-5 py-2 rounded-full shadow transition mt-auto">Learn More</a>
-            </div>
-            @endforeach
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    @foreach($services as $service)
+    <div class="bg-white border border-gray-100 p-8 rounded-xl shadow hover:shadow-xl hover:bg-gray-100 transition duration-300 flex flex-col items-center text-center">
+        <div class="text-4xl text-red-600 mb-4">
+            {!! $service->icon !!}
         </div>
+        <h4 class="font-bold text-lg mb-2">{{ $service->title }}</h4>
+        <p class="text-gray-600 text-sm mb-4">{{ $service->description }}</p>
+        <a href="{{ $service->link }}" class="text-white bg-red-600 hover:bg-red-700 font-semibold px-5 py-2 rounded-full shadow transition mt-auto">Learn More</a>
+    </div>
+    @endforeach
+</div>
+
+          
     </div>
 </section>
 
@@ -124,36 +126,34 @@
 </section>
 
 <!-- Example FAQ Section -->
-<div class="bg-white rounded-lg shadow-md p-6 md:p-10">
+<div class="bg-white rounded-lg shadow-md p-6 md:p-10 text-center">
     <h2 class="text-2xl font-bold text-gray-800 mb-6">FAQs</h2>
 
-    <div x-data="{ open: false }" class="mb-4 border-b pb-4">
-        <button @click="open = !open" class="flex items-center justify-between w-full text-left text-gray-800 font-semibold focus:outline-none">
-            <span>What is Web Application Development?</span>
-            <svg :class="{'rotate-180': open}" class="w-5 h-5 ml-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-        <div x-show="open" x-transition class="mt-3 text-gray-700">
-            Web application development is the process of creating software that runs in web browsers.
-            It includes planning, coding, testing, and deployment of interactive, dynamic, and functional platforms
-            for businesses and users alike.
-        </div>
-    </div>
+    @php
+        $faqs = [
+            ['question' => 'What is Web Application Development?', 'answer' => 'Web application development is the process of creating software that runs in web browsers...'],
+            ['question' => 'Another Question?', 'answer' => 'Your answer goes here.'],
+            // Add more as needed
+        ];
+    @endphp
 
-    <!-- Repeat for more questions -->
-    <div x-data="{ open: false }" class="mb-4 border-b pb-4">
+    @foreach ($faqs as $faq)
+    <div x-data="{ open: false }" class="mb-4 border-b pb-4 ">
         <button @click="open = !open" class="flex items-center justify-between w-full text-left text-gray-800 font-semibold focus:outline-none">
-            <span>Another Question?</span>
-            <svg :class="{'rotate-180': open}" class="w-5 h-5 ml-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span>{{ $faq['question'] }}</span>
+            <svg :class="{ 'rotate-180': open }" class="w-5 h-5 ml-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
         </button>
         <div x-show="open" x-transition class="mt-3 text-gray-700">
-            Your answer goes here.
+            {{ $faq['answer'] }}
         </div>
     </div>
+    @endforeach
 </div>
+
+
+ 
 
 <!-- Chat Button -->
 <div class="fixed bottom-6 right-6 z-50">
