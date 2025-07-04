@@ -25,7 +25,7 @@
             <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-400">
                 <h3 class="text-2xl font-bold text-orange-500 mb-2">Solutions</h3>
                 <p class="text-gray-700">
-                    {{ $caseStudy['solutions'] ?? 'No solution details available.' }}
+                    {{ $caseStudy['solutions'] ?? 'Development has taken care that strong encryption should be used and according to the rules set by HIPAA. The platform was designed in a way which can be used by admins, providers, and patients easily. Team tested everything, using the feedback to make improvements and also made provisions for the simple import and use of diagnostic libraries.' }}
                 </p>
             </div>
         </div>
