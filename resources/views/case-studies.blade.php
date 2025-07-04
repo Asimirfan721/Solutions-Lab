@@ -45,7 +45,7 @@
                     <p class="text-gray-600 mt-2">
                         Designed to support millions with migraine relief via digital therapy, tracking, and analytics tools.
                     </p>
-                    <a href="{{ route('case-studies.hrp') }}" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">
+                    <a href="{{ route('case-studies.show', 'emr-system') }}" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">
                         View Case Study1    
                     </a>
                 </div>
